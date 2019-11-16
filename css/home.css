@@ -1,0 +1,159 @@
+html{
+  background-color: #ffe4f44f;
+}
+
+header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.top-container{
+  background: url(../img/pink.png);
+}
+
+.top-container{
+  margin: 0;
+  padding:0;
+}
+
+.top-container h1{
+  text-decoration: none;
+  font-family: 'Francois One', sans-serif;
+  padding-left: 20px;
+  padding-top: 10px;
+  color: #3F51B5;
+  margin: 0px;
+  font-size: 80px;
+}
+
+h1, a {
+  text-decoration: none;
+  color: #3F51B5;
+
+}
+
+.top-container img{
+  height: 25px;
+  margin: 10px 10px;
+}
+
+#facebook-icon{
+  padding-left: 10px;
+  margin: 10px 10px;
+}
+
+.sidenav {
+  right: 0;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  background-color: #3F51B5;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+  color: #fbe0f0;
+  display: block;
+  transition: 0.3s;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  font-size: 36px;
+  margin-right: 50px;
+}
+
+.menu {
+  position: absolute;
+  right: 0;
+  color: #3F51B5;
+  top-container.bottom: 20px;
+}
+
+.sidenav input[type=text] {
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 30px;
+  border: 4px solid #ffe5f5;
+  margin-top: 8px;
+  margin-left: 30px;
+  font-size: 17px;
+  width: 75%
+
+}
+
+
+/* Left column */
+.leftcolumn {
+  float: left;
+  width:50%;
+  box-sizing: border-box;
+}
+
+/* Right column */
+.rightcolumn {
+  box-sizing: border-box;
+  float: right;
+  width: 50%;
+
+}
+
+/* Fake image */
+.article-img {
+  width: 100%;
+  border-radius: 30px;
+}
+
+/* Add a card effect for articles */
+.card {
+  padding: 20px;
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 30px;
+  box-shadow: 10px 10px 5px grey;
+  line-height: 150%;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+footer {
+  font-family: 'Francois One', sans-serif;
+  background: url(../img/pink.png);
+  color:#3F51B5;
+  text-align: center;
+  width: 100%;
+  font-size: 1em;
+}
