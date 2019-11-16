@@ -11,12 +11,10 @@ header {
 .top-container{
   background: url(../img/pink.png);
 }
-
 .top-container{
   margin: 0;
-  padding:0;
+  width: 100%;
 }
-
 .top-container h1{
   text-decoration: none;
   font-family: 'Francois One', sans-serif;
