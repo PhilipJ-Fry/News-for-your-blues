@@ -6,53 +6,82 @@
   <link rel="stylesheet" href="css/contact.css" type="text/css">
   <link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css">
   <script src="/js/home.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Francois+One|Fredoka+One|Montserrat|Patua+One|Prata&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Calistoga|Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="top-container">
-  <div class="icon">
-<h1><a href="index.html">NEWS FOR YOUR BLUES</a></h1>
+  <div class="top-container">
+    <div class="icon">
+      <h1><a href="index.html">NEWS FOR YOUR BLUES</a></h1>
 
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="index.html">HOME</a>
-  <a href="about.html">ABOUT</a>
-  <a href="contact.html">CONTACT</a>
-  <input type="text" placeholder=" SEARCH..">
-</div>
-<div class="menu">
-<span style="font-size:30px;cursor:pointer;padding:25px;" onclick="openNav()">&#9776; </span>
-</div>
-<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-}
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="contact.html">CONTACT</a>
+        <input type="text" placeholder=" SEARCH..">
+      </div>
+      <div class="menu">
+        <span style="font-size:30px;cursor:pointer;padding:25px;" onclick="openNav()">&#9776; </span>
+      </div>
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-</script>
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+      </script>
 
-<a href="#"><img id= "facebook-icon" src="img/facebook.png" class="icon" alt="facebook" /></a>
-<a href="#"><img src="img/twitter.png" class="icon" alt="twitter"/></a>
-<a href="#"><img src="img/instagram.png" class="icon" alt="instagram"/></a>
-<a href="#"><img src="img/pinterest.png" class="icon" alt="pinterest"/></a>
+      <a href="#"><img id= "facebook-icon" src="img/facebook.png" class="icon" alt="facebook" /></a>
+      <a href="#"><img src="img/twitter.png" class="icon" alt="twitter"/></a>
+      <a href="#"><img src="img/instagram.png" class="icon" alt="instagram"/></a>
+      <a href="#"><img src="img/pinterest.png" class="icon" alt="pinterest"/></a>
 
 
-</div>
-</div>
-
-<div class="contact">
-<h1>CONTACT US</h1>
-</div>
-
-<footer>
-  <div class="container">
-    <div class="footer-container">
-      <p><strong>DESIGNED BY GIVE ME A &lt;br&gt;</strong></p>
     </div>
   </div>
-</footer>
 
-  </body>
+  <div class="contact">
+
+  <div class="container">
+    <div style="text-align:center">
+      <h1>CONTACT US</h1>
+      <p>Leave us a message below:</p>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img src="img/orchid.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="uk">UK</option>
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-container">
+        <p><strong>DESIGNED BY GIVE ME A &lt;br&gt;</strong></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
 </html>
