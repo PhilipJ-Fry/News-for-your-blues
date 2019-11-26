@@ -5,123 +5,96 @@
   <title>News for you blues</title>
   <link rel="stylesheet" href="css/home.css" type="text/css">
   <link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css">
+  <script src="/js/home.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Prata&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <div class="top">
-      <h1><a href="index.html">NEWS FOR YOUR BLUES</a></h1>
+      <div class="top-container">
+        <h1><a href="index.html">NEWS FOR YOUR BLUES</a></h1>
 
-      <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html">HOME</a>
-        <a href="about.html">ABOUT</a>
-        <a href="contact.html">CONTACT</a>
-        <input type="text" placeholder=" SEARCH..">
-      </div>
-
-      <div class="menu">
-        <span style="font-size:30px;cursor:pointer;padding:25px;" onclick="openNav()">&#9776; </span>
-      </div>
-
-      <script>
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-      }
-
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-      }
-      </script>
-
-      <div class="icon">
-        <a href="#"><img id= "facebook-icon" src="img/facebook.png" class="icon" alt="facebook"/></a>
-        <a href="#"><img src="img/twitter.png" class="icon" alt="twitter"/></a>
-        <a href="#"><img src="img/instagram.png" class="icon" alt="instagram"/></a>
-        <a href="#"><img src="img/pinterest.png" class="icon" alt="pinterest"/></a>
-      </div>
-    </div>
-  </header>
-
-    <div class="row">
-
-      <div class="col">
-        <div class="card">
-          <a href="https://en.wikipedia.org/wiki/Rose"><img src="img/rose.jpg" class="article-img" alt="pink rose"/></a>
-          <h2>ROSE</h2>
-          <h5>by Someone, Nov 14, 2019</h5>
-          <p>A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears. There are over three hundred species and thousands of cultivars.<br>
-            They form a group of plants that can be erect shrubs, climbing, or trailing, with stems that are often armed with sharp prickles.<br>
-            </div>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html">HOME</a>
+          <a href="about.html">ABOUT</a>
+          <a href="contact.html">CONTACT</a>
+          <input type="text" placeholder=" SEARCH..">
         </div>
 
-        <div class="col">
-          <div class="card">
-            <a href="https://en.wikipedia.org/wiki/Rose"><img src="img/rose.jpg" class="article-img" alt="pink rose"/></a>
-            <h2>ROSE</h2>
-            <h5>by Someone, Nov 14, 2019</h5>
-            <p>A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears. There are over three hundred species and thousands of cultivars.<br>
-              They form a group of plants that can be erect shrubs, climbing, or trailing, with stems that are often armed with sharp prickles.<br>
-              </div>
-          </div>
+        <div class="menu">
+          <span style="font-size:30px;cursor:pointer;padding:25px;" onclick="openNav()">&#9776; </span>
+        </div>
+        <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
 
-          <div class="col">
-            <div class="card">
-              <a href="https://en.wikipedia.org/wiki/Rose"><img src="img/rose.jpg" class="article-img" alt="pink rose"/></a>
-              <h2>ROSE</h2>
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+
+        <div class="icon">
+          <a href="#"><img id= "facebook-icon" src="img/facebook.png" class="icon" alt="facebook"/></a>
+          <a href="#"><img src="img/twitter.png" class="icon" alt="twitter"/></a>
+          <a href="#"><img src="img/instagram.png" class="icon" alt="instagram"/></a>
+          <a href="#"><img src="img/pinterest.png" class="icon" alt="pinterest"/></a>
+        </div>
+      </div>
+  </header>
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <a href="https://en.wikipedia.org/wiki/Rose"><img src="img/rose.jpg" class="article-img" alt="pink rose"/></a>
+        <h2>ROSE</h2>
+        <h5>by Someone, Nov 14, 2019</h5>
+        <p>A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears. There are over three hundred species and thousands of cultivars.<br>
+          They form a group of plants that can be erect shrubs, climbing, or trailing, with stems that are often armed with sharp prickles.<br>
+          Flowers vary in size and shape and are usually large and showy, in colours ranging from white through yellows and reds.<br>
+          Most species are native to Asia, with smaller numbers native to Europe, North America, and northwestern Africa. Species, cultivars and hybrids are all widely grown for their beauty and often are fragrant. Roses have acquired cultural significance in many societies.<br>
+          Rose plants range in size from compact, miniature roses, to climbers that can reach seven meters in height. Different species hybridize easily, and this has been used in the development of the wide range of garden roses.</p>
+        </div>
+
+        <div class="card">
+          <a href="https://en.wikipedia.org/wiki/Succulent_plant"><img src="img/spire.jpg" class="article-img" alt="succulent"/></a>
+          <h2>SUCCULENTS</h2>
+          <h5>by Someone, Nov 14, 2019</h5>
+          <p>In botany, succulent plants, also known as succulents, are plants with parts that are thickened, fleshy and engorged, usually to retain water in arid climates or soil conditions. The word "succulent" comes from the Latin word sucus, meaning juice, or sap.<br>
+            Succulent plants may store water in various structures, such as leaves and stems. Some definitions also include roots, thus geophytes that survive unfavorable periods by dying back to underground storage organs may be regarded as succulents.<br>
+            In horticultural use, the term "succulent" is sometimes used in a way which excludes plants that botanists would regard as succulents, such as cacti.<br>
+            Succulents are often grown as ornamental plants because of their striking and unusual appearance, as well as their ability to thrive with relatively minimal care.<br>
+            Many plant families have multiple succulents found within them (over 25 plant families).[2] In some families, such as Aizoaceae, Cactaceae, and Crassulaceae, most species are succulents. The habitats of these water preserving plants are often in areas with high temperatures and low rainfall, such as deserts. Succulents have the ability to thrive on limited water sources, such as mist and dew, which makes them equipped to survive in an ecosystem which contains scarce water sources.</p>
+          </div>
+        </div>
+
+        <div class="rightcolumn">
+          <div class="card">
+            <a href="https://en.wikipedia.org/wiki/Pineapple"><img src="img/pineapple.jpg" class="article-img" alt="a pineapple"/></a>
+            <h2>PINEAPPLE</h2>
+            <h5>by Someone, Nov 14, 2019</h5>
+            <p>The pineapple (Ananas comosus) is a tropical plant with an edible fruit, also called a pineapple,and the most economically significant plant in the family Bromeliaceae.<br>
+              Pineapples may be cultivated from the offset produced at the top of the fruit,possibly flowering in five to ten months and fruiting in the following six months.Pineapples do not ripen significantly after harvest. In 2016, Costa Rica, Brazil, and the Philippines accounted for nearly one-third of the world's production of pineapples.</p>
+
+            </div><div class="card">
+              <a href="https://en.wikipedia.org/wiki/Orchidaceae"><img src="img/orchid.jpg" class="article-img" alt="an orchid flower"/></a>
+              <h2>ORCHID</h2>
               <h5>by Someone, Nov 14, 2019</h5>
-              <p>A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears. There are over three hundred species and thousands of cultivars.<br>
-                They form a group of plants that can be erect shrubs, climbing, or trailing, with stems that are often armed with sharp prickles.<br>
-                  </div>
+              <p>The Orchidaceae are a diverse and widespread family of flowering plants, with blooms that are often colourful and fragrant, commonly known as the orchid family.<br>
+                Along with the Asteraceae, they are one of the two largest families of flowering plants. The Orchidaceae have about 28,000 currently accepted species, distributed in about 763 genera. The determination of which family is larger is still under debate, because verified data on the members of such enormous families are continually in flux. Regardless, the number of orchid species nearly equals the number of bony fishes and is more than twice the number of bird species, and about four times the number of mammal species.<br>
+                The family encompasses about 6–11% of all seed plants. The largest genera are Bulbophyllum (2,000 species), Epidendrum (1,500 species), Dendrobium (1,400 species) and Pleurothallis (1,000 species).<br>
+                It also includes Vanilla–the genus of the vanilla plant, the type genus Orchis, and many commonly cultivated plants such as Phalaenopsis and Cattleya. Moreover, since the introduction of tropical species into cultivation in the 19th century, horticulturists have produced more than 100,000 hybrids and cultivars.</p>
+              </div>
             </div>
 
-          </div>
-
-            <div class="row">
-            <div class="col">
-              <div class="card">
-                <a href="https://en.wikipedia.org/wiki/Rose"><img src="img/rose.jpg" class="article-img" alt="pink rose"/></a>
-                <h2>ROSE</h2>
-                <h5>by Someone, Nov 14, 2019</h5>
-                <p>A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears. There are over three hundred species and thousands of cultivars.<br>
-                  They form a group of plants that can be erect shrubs, climbing, or trailing, with stems that are often armed with sharp prickles.<br>
-                  </div>
-              </div>
-
-              <div class="col">
-                <div class="card">
-                  <a href="https://en.wikipedia.org/wiki/Rose"><img src="img/rose.jpg" class="article-img" alt="pink rose"/></a>
-                  <h2>ROSE</h2>
-                  <h5>by Someone, Nov 14, 2019</h5>
-                  <p>A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears. There are over three hundred species and thousands of cultivars.<br>
-                    They form a group of plants that can be erect shrubs, climbing, or trailing, with stems that are often armed with sharp prickles.<br>
-                    </div>
-                </div>
-
-                <div class="col">
-                  <div class="card">
-                    <a href="https://en.wikipedia.org/wiki/Rose"><img src="img/rose.jpg" class="article-img" alt="pink rose"/></a>
-                    <h2>ROSE</h2>
-                    <h5>by Someone, Nov 14, 2019</h5>
-                    <p>A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears. There are over three hundred species and thousands of cultivars.<br>
-                      They form a group of plants that can be erect shrubs, climbing, or trailing, with stems that are often armed with sharp prickles.<br>
-                      </div>
-                  </div>
+            <footer>
+              <div class="container">
+                <div class="footer-container">
+                  <p><strong>DESIGNED BY GIVE ME A &lt;br&gt;</strong></p>
                 </div>
               </div>
-
-              <footer>
-                <div class="container">
-                  <div class="footer-container">
-                    <p><strong>DESIGNED BY GIVE ME A &lt;br&gt;</strong></p>
-                  </div>
-                </div>
-              </footer>
-
-              <script src="/js/home.js"></script>
-
-            </body>
-            </html>
-
+            </footer>
           </body>
           </html>
+
+        </body>
+        </html>
