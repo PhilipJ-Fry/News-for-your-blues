@@ -25,16 +25,6 @@
         <span style="font-size:30px;cursor:pointer;padding:25px;" onclick="openNav()">&#9776; </span>
       </div>
 
-      <script>
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-      }
-
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-      }
-      </script>
-
       <div class="icon">
         <a href="#"><img id= "facebook-icon" src="img/facebook.png" class="icon" alt="facebook"/></a>
         <a href="#"><img src="img/twitter.png" class="icon" alt="twitter"/></a>
@@ -45,85 +35,54 @@
   </header>
 
   <!-- Slideshow container -->
-<div class="slideshow-container">
+  <div class="slideshow-container">
 
-  <!-- Full-width images and caption text -->
-  <div class="mySlides fade">
-    <a href="https://en.wikipedia.org/wiki/Rose"><img src="img/pink_haze.jpg" style="width:100%"></a>
-    <div class="text">
-      <h2>ROSE</h2>
-      <h5>by Someone, Nov 14, 2019</h5>
-      <p>A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears. There are over three hundred species and thousands of cultivars.<br>
-        They form a group of plants that can be erect shrubs, climbing, or trailing, with stems that are often armed with sharp prickles.<br>
-      </p>
+    <!-- Full-width images and caption text -->
+    <div class="mySlides fade">
+      <a href="https://en.wikipedia.org/wiki/Rose"><img src="img/pink_haze.jpg" style="width:100%"></a>
+      <div class="text">
+        <h2>ROSE</h2>
+        <h5>by Someone, Nov 14, 2019</h5>
+        <p>A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears. There are over three hundred species and thousands of cultivars.<br>
+          They form a group of plants that can be erect shrubs, climbing, or trailing, with stems that are often armed with sharp prickles.<br>
+        </p>
+      </div>
     </div>
-  </div>
 
-  <div class="mySlides fade">
-    <a href="https://en.wikipedia.org/wiki/Rose"><img src="img/lake_4.jpg" style="width:100%"></a>
-    <div class="text">
-      <h2>ROSE</h2>
-      <h5>by Someone, Nov 14, 2019</h5>
-      <p>A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears. There are over three hundred species and thousands of cultivars.<br>
-        They form a group of plants that can be erect shrubs, climbing, or trailing, with stems that are often armed with sharp prickles.<br>
-      </p>
+    <div class="mySlides fade">
+      <a href="https://en.wikipedia.org/wiki/Rose"><img src="img/lake_4.jpg" style="width:100%"></a>
+      <div class="text">
+        <h2>ROSE</h2>
+        <h5>by Someone, Nov 14, 2019</h5>
+        <p>A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears. There are over three hundred species and thousands of cultivars.<br>
+          They form a group of plants that can be erect shrubs, climbing, or trailing, with stems that are often armed with sharp prickles.<br>
+        </p>
+      </div>
     </div>
-  </div>
 
-  <div class="mySlides fade">
-    <a href="https://en.wikipedia.org/wiki/Rose"><img src="img/train.jpg" style="width:100%"></a>
-    <div class="text">
-      <h2>ROSE</h2>
-      <h5>by Someone, Nov 14, 2019</h5>
-      <p>A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears. There are over three hundred species and thousands of cultivars.<br>
-        They form a group of plants that can be erect shrubs, climbing, or trailing, with stems that are often armed with sharp prickles.<br>
-      </p>
+    <div class="mySlides fade">
+      <a href="https://en.wikipedia.org/wiki/Rose"><img src="img/train.jpg" style="width:100%"></a>
+      <div class="text">
+        <h2>ROSE</h2>
+        <h5>by Someone, Nov 14, 2019</h5>
+        <p>A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears. There are over three hundred species and thousands of cultivars.<br>
+          They form a group of plants that can be erect shrubs, climbing, or trailing, with stems that are often armed with sharp prickles.<br>
+        </p>
+      </div>
     </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
+  <br>
 
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-</script>
-
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
 
   <div class="row">
 
@@ -135,6 +94,41 @@ function showSlides(n) {
         <p>A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears. There are over three hundred species and thousands of cultivars.<br>
           They form a group of plants that can be erect shrubs, climbing, or trailing, with stems that are often armed with sharp prickles.<br>
         </p>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card">
+        <a href="https://en.wikipedia.org/wiki/Rose"><img src="img/rose.jpg" class="article-img" alt="pink rose"/></a>
+        <h2>ROSE</h2>
+        <h5>by Someone, Nov 14, 2019</h5>
+        <p>A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears. There are over three hundred species and thousands of cultivars.<br>
+          They form a group of plants that can be erect shrubs, climbing, or trailing, with stems that are often armed with sharp prickles.<br>
+        </p>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card">
+        <a href="https://en.wikipedia.org/wiki/Rose"><img src="img/rose.jpg" class="article-img" alt="pink rose"/></a>
+        <h2>ROSE</h2>
+        <h5>by Someone, Nov 14, 2019</h5>
+        <p>A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears. There are over three hundred species and thousands of cultivars.<br>
+          They form a group of plants that can be erect shrubs, climbing, or trailing, with stems that are often armed with sharp prickles.<br>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <div class="card">
+        <a href="https://en.wikipedia.org/wiki/Rose"><img src="img/rose.jpg" class="article-img" alt="pink rose"/></a>
+        <h2>ROSE</h2>
+        <h5>by Someone, Nov 14, 2019</h5>
+        <p>A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears. There are over three hundred species and thousands of cultivars.<br>
+          They form a group of plants that can be erect shrubs, climbing, or trailing, with stems that are often armed with sharp prickles.<br>
         </div>
       </div>
 
@@ -145,7 +139,6 @@ function showSlides(n) {
           <h5>by Someone, Nov 14, 2019</h5>
           <p>A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears. There are over three hundred species and thousands of cultivars.<br>
             They form a group of plants that can be erect shrubs, climbing, or trailing, with stems that are often armed with sharp prickles.<br>
-          </p>
           </div>
         </div>
 
@@ -156,68 +149,34 @@ function showSlides(n) {
             <h5>by Someone, Nov 14, 2019</h5>
             <p>A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears. There are over three hundred species and thousands of cultivars.<br>
               They form a group of plants that can be erect shrubs, climbing, or trailing, with stems that are often armed with sharp prickles.<br>
-            </p>
             </div>
           </div>
-
         </div>
+      </div>
 
-        <div class="row">
-          <div class="col">
-            <div class="card">
-              <a href="https://en.wikipedia.org/wiki/Rose"><img src="img/rose.jpg" class="article-img" alt="pink rose"/></a>
-              <h2>ROSE</h2>
-              <h5>by Someone, Nov 14, 2019</h5>
-              <p>A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears. There are over three hundred species and thousands of cultivars.<br>
-                They form a group of plants that can be erect shrubs, climbing, or trailing, with stems that are often armed with sharp prickles.<br>
-              </div>
+      <footer>
+        <div class="container">
+          <div class="footer-container">
+            <p><strong>DESIGNED BY GIVE ME A &lt;br&gt;</strong></p>
+            <form>
+              <p>Subscribe to our Newsletter</p>
+              <input type="text" placeholder="Email address" required>
+              <input type="submit" value="Subscribe">
+            </form>
+            <div class="icon">
+              <a href="#"><img id= "facebook-icon" src="img/facebook.png" class="icon" alt="facebook"/></a>
+              <a href="#"><img src="img/twitter.png" class="icon" alt="twitter"/></a>
+              <a href="#"><img src="img/instagram.png" class="icon" alt="instagram"/></a>
+              <a href="#"><img src="img/pinterest.png" class="icon" alt="pinterest"/></a>
             </div>
+          </div>
+        </div>
+      </footer>
 
-            <div class="col">
-              <div class="card">
-                <a href="https://en.wikipedia.org/wiki/Rose"><img src="img/rose.jpg" class="article-img" alt="pink rose"/></a>
-                <h2>ROSE</h2>
-                <h5>by Someone, Nov 14, 2019</h5>
-                <p>A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears. There are over three hundred species and thousands of cultivars.<br>
-                  They form a group of plants that can be erect shrubs, climbing, or trailing, with stems that are often armed with sharp prickles.<br>
-                </div>
-              </div>
+      <script src="js/home.js"></script>
+      
+    </body>
+    </html>
 
-              <div class="col">
-                <div class="card">
-                  <a href="https://en.wikipedia.org/wiki/Rose"><img src="img/rose.jpg" class="article-img" alt="pink rose"/></a>
-                  <h2>ROSE</h2>
-                  <h5>by Someone, Nov 14, 2019</h5>
-                  <p>A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears. There are over three hundred species and thousands of cultivars.<br>
-                    They form a group of plants that can be erect shrubs, climbing, or trailing, with stems that are often armed with sharp prickles.<br>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <footer>
-              <div class="container">
-                <div class="footer-container">
-                  <p><strong>DESIGNED BY GIVE ME A &lt;br&gt;</strong></p>
-                  <form>
-                    <p>Subscribe to our Newsletter</p>
-                    <input type="text" placeholder="Email address" required>
-                    <input type="submit" value="Subscribe">
-                  </form>
-                  <div class="icon">
-                    <a href="#"><img id= "facebook-icon" src="img/facebook.png" class="icon" alt="facebook"/></a>
-                    <a href="#"><img src="img/twitter.png" class="icon" alt="twitter"/></a>
-                    <a href="#"><img src="img/instagram.png" class="icon" alt="instagram"/></a>
-                    <a href="#"><img src="img/pinterest.png" class="icon" alt="pinterest"/></a>
-                  </div>
-                </div>
-              </div>
-            </footer>
-
-            <script src="/js/home.js"></script>
-
-          </body>
-          </html>
-
-        </body>
-        </html>
+  </body>
+  </html>

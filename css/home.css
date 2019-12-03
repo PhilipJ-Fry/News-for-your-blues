@@ -101,11 +101,13 @@ h1, a {
 .slideshow-container {
   position: relative;
   margin: auto;
+  padding-top: 6vh;
 }
 
 /* Hide the images by default */
 .mySlides {
   display: none;
+  transition-duration: 0.7s;
 }
 
 /* Next & previous buttons */

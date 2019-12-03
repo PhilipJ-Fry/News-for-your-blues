@@ -24,15 +24,6 @@
       <div class="menu">
         <span style="font-size:30px;cursor:pointer;padding:25px;" onclick="openNav()">&#9776; </span>
       </div>
-      <script>
-        function openNav() {
-          document.getElementById("mySidenav").style.width = "250px";
-        }
-
-        function closeNav() {
-          document.getElementById("mySidenav").style.width = "0";
-        }
-      </script>
 
       <a href="#"><img id= "facebook-icon" src="img/facebook.png" class="icon" alt="facebook" /></a>
       <a href="#"><img src="img/twitter.png" class="icon" alt="twitter"/></a>
@@ -45,36 +36,36 @@
 
   <div class="contact">
 
-  <div class="container">
-    <div style="text-align:center">
-      <h1>CONTACT US</h1>
-      <p>Leave us a message below:</p>
-    </div>
-    <div class="row">
-      <div class="column">
-        <img src="img/orchid.jpg" style="width:100%">
+    <div class="container">
+      <div style="text-align:center">
+        <h1>CONTACT US</h1>
+        <p>Leave us a message below:</p>
       </div>
-      <div class="column">
-        <form action="/action_page.php">
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-          <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="uk">UK</option>
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-          </select>
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-          <input type="submit" value="Submit">
-        </form>
+      <div class="row">
+        <div class="column">
+          <img src="img/orchid.jpg" style="width:100%">
+        </div>
+        <div class="column">
+          <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="uk">UK</option>
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
   <footer>
     <div class="container">
@@ -94,6 +85,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/contact.js"></script>
 
 </body>
 </html>
