@@ -1,5 +1,10 @@
+
 html{
   background-color: white;
+}
+
+p {
+  font-size: 1.7rem;
 }
 
 .about h1 {
@@ -9,44 +14,50 @@ html{
   font-size: 2.2em;
 }
 
-.top-container{
-  background: url(../img/yellow.png);
+header a:hover {
+  text-decoration: none;
+  color: #3F51B5;
 }
-.top-container{
-  margin: 0;
+
+header {
   width: 100%;
+  margin: 0;
+  padding: 0;
+  background: url(../img/yellow.png);
+  min-height:20vh;
 }
-.top-container h1{
+
+.header h1{
   text-decoration: none;
   font-family: 'Calistoga', cursive;
   padding-left: 20px;
-  padding-top: 10px;
+  padding-top: 20px;
   color: #3F51B5;
   margin: 0px;
   font-size: 80px;
 }
+
 h1, a {
   text-decoration: none;
   color: #3F51B5;
 
 }
 
-.top-container img{
+.header img {
   height: 25px;
   margin: 10px 10px;
 }
 
-#facebook-icon{
+#facebook-icon {
   padding-left: 10px;
   margin: 10px 10px;
 }
-
 .sidenav {
   right: 0;
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 0;
+  z-index: 3;
   top: 0;
   right: 0;
   background-color: #3F51B5;
@@ -94,22 +105,32 @@ h1, a {
   font-size: 17px;
   width: 75%
 }
+/*main about section*/
+.about {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+.about img {
+  display: flex;
+  padding: 2em;
+  margin: 0 auto;
+  border-radius: 9em;
+  width: 18em;
+}
 
+/*footer*/
 footer {
+  margin-top: 20px;
   font-family: 'Montserrat', sans-serif;
   background: url(../img/yellow.png);
   color:#3F51B5;
   text-align: center;
   width: 100%;
-  font-size: 1em;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding-bottom: 50px;
+  font-size: 1rem;
+  padding-bottom: 3rem;
 }
-
 .footer-container{
-  padding-top: 10px;
+  padding-top: 3rem;
 }
 
 footer form {

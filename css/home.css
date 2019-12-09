@@ -2,24 +2,29 @@ html{
   background-color: #ffe4f44f;
 }
 
+p {
+  font-size: 1.7rem;
+}
+
+/*title banner*/
 header {
   width: 100%;
   margin: 0;
   padding: 0;
+  background: url(../img/pink.png);
+  min-height:20vh;
 }
 
-.top{
-  background: url(../img/pink.png);
+header a:hover {
+  text-decoration: none;
+  color: #3F51B5;
 }
-.top{
-  margin: 0;
-  width: 100%;
-}
-.top h1{
+
+.header h1{
   text-decoration: none;
   font-family: 'Calistoga', cursive;
   padding-left: 20px;
-  padding-top: 10px;
+  padding-top: 20px;
   color: #3F51B5;
   margin: 0px;
   font-size: 80px;
@@ -31,16 +36,17 @@ h1, a {
 
 }
 
-.top img{
+.header img {
   height: 25px;
   margin: 10px 10px;
 }
 
-#facebook-icon{
+#facebook-icon {
   padding-left: 10px;
   margin: 10px 10px;
 }
 
+/*side navigation panel*/
 .sidenav {
   right: 0;
   height: 100%;
@@ -82,7 +88,6 @@ h1, a {
   position: absolute;
   right: 0;
   color: #3F51B5;
-  top-container.bottom: 20px;
 }
 
 .sidenav input[type=text] {
@@ -95,135 +100,77 @@ h1, a {
   width: 75%
 
 }
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
+/*featured articles carousel*/
+.headlines {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
   position: relative;
-  margin: auto;
-  padding-top: 6vh;
+  text-align: center;
+  padding-top: 7rem;
+  padding-bottom: 10rem;
+}
+.d-block {
+  min-height: 44rem;
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
-  transition-duration: 0.7s;
+.carousel-caption {
+background-color: #00000073;
+}
+
+.carousel-caption, h2 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.carousel-caption .btn {
+    text-shadow: none;
+    background-color: #3f51b5;
+    font-size: 14px;
+    border-radius: 30px;
+    border: none;
 }
 
 /* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
+.carousel-control-prev, .carousel-control-next {
   width: auto;
-  margin-top: -22px;
   padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
   user-select: none;
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
+/*main article cards*/
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
+.card-columns {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 5rem;
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
 
-/* Caption text */
-.text {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: relative;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-  background-color: white;
-
-}
-
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-.no-gutters {
-  margin-right: 0;
-  margin-left: 0;
-}
-
-.col {
-  width: 10vw;
-}
-
-.article-img {
-  width: 100%;
-  border-radius: 30px;
 }
 
 .card {
-  padding: 20px;
-  background-color: white;
-  margin-top: 20px;
-  font-family: 'Montserrat', sans-serif;
   border-radius: 30px;
-  box-shadow: 10px 10px 5px grey;
-  line-height: 150%;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.card-img-top {
+  border-radius: 30px 30px 0px 0px;
 }
 
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {
-    width: 100%;
-    padding: 0;
-  }
+.card-body {
+  font-family: 'Montserrat', sans-serif;
 }
+.card .btn-primary {
+  background-color: #3F51B5;
+  border-radius: 30px;
+  border: none;
+  font-size: 1.4rem;
+}
+
+/*footer*/
 
 footer {
   margin-top: 20px;
@@ -232,11 +179,12 @@ footer {
   color:#3F51B5;
   text-align: center;
   width: 100%;
-  font-size: 1em;
-  padding-bottom: 50px;
+  font-size: 1rem;
+  padding-bottom: 3rem;
+  font-size: 1rem;
 }
 .footer-container{
-  padding-top: 10px;
+  padding-top: 3rem;
 }
 
 footer form {

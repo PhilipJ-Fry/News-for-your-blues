@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>News for you blues</title>
-  <link rel="stylesheet" href="css/about.css" type="text/css">
-  <link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css">
-  <script src="/js/home.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Calistoga|Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/about.css" type="text/css">
+  <link rel="icon" type="image/x-icon" href="img/favicon-pink.png">
 </head>
 <body>
-  <div class="top-container">
-    <div class="icon">
+
+  <!-- title banner -->
+  <header>
+    <div class="header">
       <h1><a href="home.html">NEWS FOR YOUR BLUES</a></h1>
 
       <div id="mySidenav" class="sidenav">
@@ -21,24 +27,47 @@
         <a href="contact.html">CONTACT</a>
         <input type="text" placeholder=" SEARCH..">
       </div>
+
       <div class="menu">
         <span style="font-size:30px;cursor:pointer;padding:25px;" onclick="openNav()">&#9776; </span>
       </div>
 
-      <a href="#"><img id= "facebook-icon" src="img/facebook.png" class="icon" alt="facebook" /></a>
-      <a href="#"><img src="img/twitter.png" class="icon" alt="twitter"/></a>
-      <a href="#"><img src="img/instagram.png" class="icon" alt="instagram"/></a>
-      <a href="#"><img src="img/pinterest.png" class="icon" alt="pinterest"/></a>
+      <div class="icon">
+        <a href="#"><img id= "facebook-icon" src="img/facebook.png" class="icon" alt="facebook"/></a>
+        <a href="#"><img src="img/twitter.png" class="icon" alt="twitter"/></a>
+        <a href="#"><img src="img/instagram.png" class="icon" alt="instagram"/></a>
+        <a href="#"><img src="img/pinterest.png" class="icon" alt="pinterest"/></a>
+      </div>
+    </div>
+  </header>
 
-
+<!--main-->
+  <div class="about">
+    <div class="container">
+    <h1>ABOUT US</h1>
+    <p> a bit about our team </p>
+    <div class="row">
+      <div class="col">
+        <h2>rose</h2>
+        <img src="img/rose.jpg" alt="A local image">
+        <p>a little about you</p>
+      </div>
+      <div class="col">
+        <h2>rose</h2>
+        <img src="img/rose.jpg" alt="A local image">
+        <p>a little about you</p>
+      </div>
+      <div class="col">
+        <h2>rose</h2>
+        <img src="img/rose.jpg" alt="A local image">
+        <p>a little about you</p>
+      </div>
     </div>
   </div>
-
-  <div class="about">
-    <h1>ABOUT US</h1>
-  </div>
+</div>
 
 
+<!--footer-->
   <footer>
     <div class="container">
       <div class="footer-container">
@@ -60,6 +89,12 @@
 
 
   <script src="js/about.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
 </body>
 </html>

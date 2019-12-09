@@ -2,6 +2,10 @@ html{
   background-color: white;
 }
 
+p {
+  font-size: 1.7rem;
+}
+
 .contact h1 {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
@@ -9,34 +13,41 @@ html{
   font-size: 2.1em;
 }
 
-.top-container{
-  background: url(../img/green.png);
+header a:hover {
+  text-decoration: none;
+  color: #3F51B5;
 }
-.top-container{
-  margin: 0;
+
+header {
   width: 100%;
+  margin: 0;
+  padding: 0;
+  background: url(../img/green.png);
+  min-height:20vh;
 }
-.top-container h1{
+
+.header h1{
   text-decoration: none;
   font-family: 'Calistoga', cursive;
   padding-left: 20px;
-  padding-top: 10px;
+  padding-top: 20px;
   color: #3F51B5;
   margin: 0px;
   font-size: 80px;
 }
+
 h1, a {
   text-decoration: none;
   color: #3F51B5;
 
 }
 
-.top-container img{
+.header img {
   height: 25px;
   margin: 10px 10px;
 }
 
-#facebook-icon{
+#facebook-icon {
   padding-left: 10px;
   margin: 10px 10px;
 }
@@ -46,7 +57,7 @@ h1, a {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 0;
+  z-index: 3;
   top: 0;
   right: 0;
   background-color: #3F51B5;
@@ -159,27 +170,25 @@ h1, a {
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .column, input[type=submit] {
+  .column, .sub-but {
     width: 100%;
     margin-top: 0;
   }
 }
 
+/*footer*/
 footer {
-  font-family: 'Francois One', sans-serif;
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
   background: url(../img/green.png);
   color:#3F51B5;
   text-align: center;
   width: 100%;
-  font-size: 1em;
-  position: relative;
-  bottom: 0;
-  right: 0;
-  padding-bottom: 50px;
+  font-size: 1rem;
+  padding-bottom: 3rem;
 }
-
 .footer-container{
-  padding-top: 10px;
+  padding-top: 3rem;
 }
 
 footer form {
@@ -187,14 +196,14 @@ footer form {
   padding-bottom: 10px;
 }
 
-.footer-container input[type=text] {
+input[type=text] {
   font-family: 'Montserrat', sans-serif;
   border-radius: 30px;
   padding: 5px;
   border: 4px solid #e3f0b0;
 }
 
-.footer-container input[type=submit] {
+input[type=submit] {
   font-family: 'Montserrat', sans-serif;
   background-color: #ff7999;
   color: white;
@@ -204,7 +213,7 @@ footer form {
   cursor: pointer;
 }
 
-.footer-container input[type=submit]:hover {
+input[type=submit]:hover {
   opacity: 0.8;
 }
 
