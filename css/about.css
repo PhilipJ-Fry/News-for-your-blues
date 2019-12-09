@@ -109,6 +109,7 @@ h1, a {
 .about {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
+  margin-bottom: 20vh;
 }
 .about img {
   display: flex;
