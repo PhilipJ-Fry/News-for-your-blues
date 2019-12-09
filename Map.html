@@ -1,17 +1,63 @@
 <!DOCTYPE html>
   <html>
     <head>
-        <link rel="stylesheet" href="Map.css" type="text/css">
-        <title> News For Your Blues</title>
-      </head>
-  <body>
-    <h1>News Around the World!</h1>
-    <div id="googleMap" style="width:100%;height:400px;"></div>
-      <script>
-        function myMap() {var mapProp= {center:new google.maps.LatLng(51.508742,-0.120850),zoom:5,};
-        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-        }
-      </script>
-      <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+      <meta charset="utf-8">
+      <title>News for you blues</title>
+      <link rel="stylesheet" href="css/map.css" type="text/css">
+      <link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css">
+      <script src="/js/home.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Calistoga|Montserrat&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+      <header>
+        <div class="top">
+          <h1><a href="home.html">NEWS FOR YOUR BLUES</a></h1>
+          <div class="icon">
+            <a href="#"><img id= "facebook-icon" src="img/facebook.png" class="icon" alt="facebook"/></a>
+            <a href="#"><img src="img/twitter.png" class="icon" alt="twitter"/></a>
+            <a href="#"><img src="img/instagram.png" class="icon" alt="instagram"/></a>
+            <a href="#"><img src="img/pinterest.png" class="icon" alt="pinterest"/></a>
+          </div>
+        </div>
+        </header>
+
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="home.html">HOME</a>
+            <a href="Map.html">MAP</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT</a>
+            <input type="text" placeholder=" SEARCH..">
+          </div>
+
+          <div class="menu">
+            <span style="font-size:30px;cursor:pointer;padding:25px;" onclick="openNav()">&#9776; </span>
+          </div>
+
+      <h1>News Around the World!</h1>
+        <div id="googleMap" style="width:100%;height:400px;">
+          <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1toBOBshOUjLjPyWoL3Jw8lKK5gqrGwFP" width="640" height="480"></iframe>
+        </div>
+
+        <footer>
+          <div class="container">
+            <div class="footer-container">
+              <p><strong>DESIGNED BY GIVE ME A &lt;br&gt;</strong></p>
+              <form>
+                <p>Subscribe to our Newsletter</p>
+                <input type="text" placeholder="Email address" required>
+                <input type="submit" value="Subscribe">
+              </form>
+              <div class="icon">
+                <a href="#"><img id= "facebook-icon" src="img/facebook.png" class="icon" alt="facebook"/></a>
+                <a href="#"><img src="img/twitter.png" class="icon" alt="twitter"/></a>
+                <a href="#"><img src="img/instagram.png" class="icon" alt="instagram"/></a>
+                <a href="#"><img src="img/pinterest.png" class="icon" alt="pinterest"/></a>
+              </div>
+            </div>
+          </div>
+        </footer>
+
     </body>
-</html>
+  </html>
