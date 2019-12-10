@@ -1,7 +1,11 @@
-
-// side nav menu
+// Side navigation
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
+  if ($(window).width() < 600) {
+    document.getElementById("mySidenav").style.width = "100vw";
+  }
+  else {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
 }
 
 function closeNav() {

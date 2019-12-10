@@ -16,6 +16,27 @@ header {
   min-height:20vh;
 }
 
+@media screen and (max-width: 600px) {
+  .header {
+    min-height: 100vh;
+    max-height: 100vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mobile {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding-top: 10vh;
+    color: #3F51B5;
+  }
+}
+
+.mobile h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
 header a:hover {
   text-decoration: none;
   color: #3F51B5;
@@ -25,7 +46,8 @@ header a:hover {
   text-decoration: none;
   font-family: 'Calistoga', cursive;
   padding-left: 20px;
-  padding-top: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   color: #3F51B5;
   margin: 0px;
   font-size: 80px;
@@ -103,10 +125,8 @@ h1, a {
 
 }
 
-
 /*footer*/
 footer {
-  margin-top: 20px;
   font-family: 'Montserrat', sans-serif;
   background: url(../img/pink.png);
   color:#3F51B5;
