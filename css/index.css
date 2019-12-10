@@ -116,6 +116,14 @@ h1, a {
   width: 70%;
   margin: auto;
 }
+
+@media screen and (max-width: 600px) {
+  .headlines {
+    width: 100%;
+    margin: 0;
+  }
+}
+
 .d-block {
   min-height: 44rem;
   border-radius: 0.8rem;
