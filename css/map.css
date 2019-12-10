@@ -1,9 +1,11 @@
-html{
+html {
   background-color: #ffe4f44f;
 }
+
 p {
   font-size: 1.7rem;
 }
+
 
 /*title banner*/
 header {
@@ -19,7 +21,7 @@ header a:hover {
   color: #3F51B5;
 }
 
-.header h1{
+.header h1 {
   text-decoration: none;
   font-family: 'Calistoga', cursive;
   padding-left: 20px;
@@ -35,15 +37,16 @@ h1, a {
 
 }
 
-.header img{
+.header img {
   height: 25px;
   margin: 10px 10px;
 }
 
-#facebook-icon{
+#facebook-icon {
   padding-left: 10px;
   margin: 10px 10px;
 }
+
 
 /*side navigation panel*/
 .sidenav {
@@ -100,6 +103,7 @@ h1, a {
 
 }
 
+
 /*footer*/
 footer {
   margin-top: 20px;
@@ -108,10 +112,11 @@ footer {
   color:#3F51B5;
   text-align: center;
   width: 100%;
-  font-size: 1em;
+  font-size: 1.2em;
   padding-bottom: 3rem;
 }
-.footer-container{
+
+.footer-container {
   padding-top: 3rem;
 }
 

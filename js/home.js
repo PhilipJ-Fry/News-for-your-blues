@@ -10,7 +10,7 @@ function closeNav() {
 
 /// Activate Carousel
 $('.carousel').carousel({
-interval: 2000
+  interval: 2000
 })
 
 // Enable Carousel Indicators
